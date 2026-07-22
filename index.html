@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>张三 - 高级前端工程师 | 个人简历</title>
+<title>莫俊杰 - 软件工程专业 | 个人简历</title>
 <style>
 /* ===== CSS Variables - Theme ===== */
 :root {
@@ -213,7 +213,7 @@ body {
 }
 .about-highlight .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
 
-/* ===== Timeline (Experience & Education) ===== */
+/* ===== Timeline (Projects) ===== */
 .timeline { position: relative; padding-left: 2rem; }
 .timeline::before {
   content: ''; position: absolute; left: 0; top: 0; bottom: 0;
@@ -273,27 +273,6 @@ body {
   transition: width 1s ease;
 }
 
-/* ===== Projects ===== */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-.project-card {
-  background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm);
-  transition: all 0.3s; position: relative;
-}
-.project-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-6px); }
-.project-image {
-  height: 180px; background: var(--gradient-2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 2.5rem; color: rgba(255,255,255,0.6);
-}
-.project-card:nth-child(2) .project-image { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-.project-card:nth-child(3) .project-image { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-.project-card:nth-child(4) .project-image { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
-.project-body { padding: 1.5rem; }
-.project-body h3 { font-size: 1.1rem; color: var(--heading); margin-bottom: 0.4rem; }
-.project-body p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.8rem; }
-.project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-
 /* ===== Education ===== */
 .education-card {
   background: var(--bg-card); border: 1px solid var(--border);
@@ -308,6 +287,9 @@ body {
 .education-info h3 { font-size: 1.1rem; color: var(--heading); }
 .education-info .degree { color: var(--text-secondary); font-size: 0.9rem; }
 .education-info .date { font-size: 0.8rem; color: var(--accent); font-weight: 600; margin-top: 0.2rem; }
+.courses { margin-top: 0.8rem; }
+.courses .label { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); }
+.courses .list { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.8; }
 
 /* ===== Contact ===== */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
@@ -371,8 +353,8 @@ body {
   .hero-avatar { border-color: #6c5ce7 !important; background: #f0eeff !important; }
   body { background: #fff; font-size: 12px; }
   .section { padding: 2rem 1rem; max-width: 100%; break-inside: avoid; }
-  .about-grid, .skills-grid, .projects-grid, .contact-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
-  .timeline-card:hover, .project-card:hover, .about-card:hover, .skill-category:hover { transform: none; box-shadow: none; }
+  .about-grid, .skills-grid, .contact-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .timeline-card:hover, .about-card:hover, .skill-category:hover { transform: none; box-shadow: none; }
   @page { margin: 1.5cm; }
 }
 
@@ -385,7 +367,6 @@ body {
   .section { padding: 3rem 1rem; }
   .about-highlights { grid-template-columns: 1fr; }
   .education-card { flex-direction: column; }
-  .projects-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -404,18 +385,17 @@ body {
 <!-- Navbar -->
 <nav class="navbar">
   <div class="nav-inner">
-    <div class="nav-logo">📄 简历</div>
+    <div class="nav-logo">MJ·简历</div>
     <ul class="nav-links">
       <li><a href="#about">关于</a></li>
-      <li><a href="#experience">经历</a></li>
-      <li><a href="#skills">技能</a></li>
       <li><a href="#projects">项目</a></li>
+      <li><a href="#skills">技能</a></li>
       <li><a href="#education">教育</a></li>
       <li><a href="#contact">联系</a></li>
     </ul>
     <div class="nav-actions">
       <button class="nav-btn" id="themeToggle" title="切换暗色模式" aria-label="切换暗色模式">
-        <svg id="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
       </button>
       <button class="nav-btn" id="pdfBtn" title="导出 PDF">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
@@ -430,14 +410,13 @@ body {
   <div class="hero-particles" id="heroParticles"></div>
   <div class="hero-content animate">
     <div class="hero-avatar">👨‍💻</div>
-    <h1>张三</h1>
-    <p class="subtitle">高级前端工程师</p>
-    <p class="tagline">热衷于构建优雅、高性能的用户界面 · 8年开发经验 · 开源贡献者</p>
+    <h1>莫俊杰</h1>
+    <p class="subtitle">软件工程专业 · 本科在读</p>
+    <p class="tagline">系统掌握软件开发全流程 · 热爱后端与 AI 技术 · 具备独立开发与团队协作能力</p>
     <div class="hero-social">
-      <a href="#">📧 zhang.san@example.com</a>
-      <a href="#">🐙 github.com/zhangsan</a>
-      <a href="#">💼 linkedin.com/in/zhangsan</a>
-      <a href="#">🌐 zhangsan.dev</a>
+      <a href="mailto:2409269294@qq.com">📧 2409269294@qq.com</a>
+      <a href="tel:15271390052">📱 15271390052</a>
+      <a href="https://github.com/Jie-007">🐙 github.com/Jie-007</a>
     </div>
   </div>
 </header>
@@ -445,64 +424,70 @@ body {
 <!-- About -->
 <section class="section" id="about">
   <span class="section-label">关于我</span>
-  <h2 class="section-title">用代码创造价值</h2>
+  <h2 class="section-title">自我评价</h2>
   <div class="section-line"></div>
   <div class="about-grid">
     <div class="about-card animate">
-      <h3>👋 自我介绍</h3>
-      <p>我是一名拥有 8 年经验的前端工程师，目前专注于 React 和 TypeScript 生态。曾在多家互联网公司主导过大型前端项目的架构设计与落地，擅长性能优化、组件库搭建以及前端工程化体系的建设。热爱开源，是多个社区项目的维护者。</p>
+      <h3>👋 专业背景</h3>
+      <p>本人为软件工程专业本科在读生，系统掌握软件开发、数据库设计、软件测试等专业知识，熟悉 Spring Boot、Vue、MyBatis 等主流开发框架与工具链，具备独立完成小型软件项目的开发与调试能力。熟悉从需求分析、概要设计到编码实现、测试部署的完整软件开发流程，能高效对接前后端、调试接口并保障系统稳定运行。</p>
     </div>
     <div class="about-card animate animate-delay-1">
-      <h3>✨ 亮点</h3>
+      <h3>✨ 个人特质</h3>
+      <p>做事严谨细心，逻辑思维清晰，擅长排查代码问题与优化系统性能，拥有良好的技术文档撰写能力与团队协作意识。同时对人工智能领域抱有浓厚兴趣，主动学习机器学习基础理论与相关技术，了解常见算法模型与应用场景，具备快速学习新技术的热情与能力。</p>
       <div class="about-highlights">
-        <div class="about-highlight"><span class="dot"></span> 8年开发经验</div>
-        <div class="about-highlight"><span class="dot"></span> 开源项目 5k+ Star</div>
-        <div class="about-highlight"><span class="dot"></span> 主导过 3 个大型项目</div>
-        <div class="about-highlight"><span class="dot"></span> 技术博客 200+ 篇</div>
+        <div class="about-highlight"><span class="dot"></span> 软件工程本科在读</div>
+        <div class="about-highlight"><span class="dot"></span> 21岁</div>
+        <div class="about-highlight"><span class="dot"></span> 热爱软件开发与 AI</div>
+        <div class="about-highlight"><span class="dot"></span> 独立开发能力</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Experience -->
-<section class="section" id="experience">
-  <span class="section-label">工作经历</span>
-  <h2 class="section-title">职业旅程</h2>
+<!-- Projects -->
+<section class="section" id="projects">
+  <span class="section-label">项目经历</span>
+  <h2 class="section-title">项目作品</h2>
   <div class="section-line"></div>
-  <p class="section-desc">在不同阶段的公司积累的产品与工程经验。</p>
+  <p class="section-desc">通过课程项目与小组实践，积累的软件开发经验。</p>
+
   <div class="timeline">
     <div class="timeline-item animate">
       <div class="timeline-card">
-        <span class="timeline-period">2021.03 - 至今</span>
-        <h3>高级前端工程师</h3>
-        <p class="company">字节跳动 · 抖音电商事业部</p>
+        <span class="timeline-period">项目一</span>
+        <h3>微商城系统</h3>
+        <p class="company">技术栈：Spring Boot + MyBatis + Vue + MySQL + Redis</p>
         <ul>
-          <li>主导电商中台前端架构升级，从单体应用拆分为微前端架构，开发效率提升 40%</li>
-          <li>搭建组件库与设计系统，覆盖 50+ 业务组件，服务 200+ 内部开发者</li>
-          <li>优化首屏加载性能，LCP 从 3.2s 降至 1.1s，用户转化率提升 12%</li>
+          <li>负责后端核心模块开发，实现用户注册 / 登录、商品分类、购物车、订单管理等功能</li>
+          <li>设计并优化 MySQL 数据库表结构，编写复杂 SQL 查询，结合 Redis 实现商品热点数据缓存，提升接口响应速度约 30%</li>
+          <li>完成前后端联调，解决跨域、接口参数校验等问题，保障系统稳定运行</li>
+          <li>应用 Git 进行团队协作开发，参与代码评审，遵循敏捷开发流程</li>
         </ul>
       </div>
     </div>
     <div class="timeline-item animate animate-delay-1">
       <div class="timeline-card">
-        <span class="timeline-period">2018.06 - 2021.02</span>
-        <h3>前端开发工程师</h3>
-        <p class="company">阿里巴巴 · 淘宝技术部</p>
+        <span class="timeline-period">项目二</span>
+        <h3>图书管理系统（小组作业）</h3>
+        <p class="company">技术栈：Java + SQL Server + Swing</p>
         <ul>
-          <li>参与淘宝首页改版，负责核心模块的技术方案设计与实现</li>
-          <li>开发了一套可视化搭建平台，让运营人员可自主配置页面，需求交付周期缩短 60%</li>
-          <li>推动团队引入 TypeScript 与单元测试，代码覆盖率从 15% 提升至 78%</li>
+          <li>作为小组核心成员，负责数据库设计与后端业务逻辑实现</li>
+          <li>实现图书信息管理、读者信息管理、图书借阅 / 归还、借阅记录查询与统计等核心功能</li>
+          <li>设计多角色权限控制（管理员 / 读者），保障数据安全与操作隔离</li>
+          <li>参与需求分析、功能测试与问题排查，保障系统稳定运行</li>
         </ul>
       </div>
     </div>
     <div class="timeline-item animate animate-delay-2">
       <div class="timeline-card">
-        <span class="timeline-period">2016.07 - 2018.05</span>
-        <h3>初级前端开发</h3>
-        <p class="company">美团 · 到店事业群</p>
+        <span class="timeline-period">项目三</span>
+        <h3>微信小程序饮品点单系统</h3>
+        <p class="company">技术栈：微信小程序原生 + Spring Boot + MySQL + 微信支付 SDK</p>
         <ul>
-          <li>负责商家管理后台的前端开发与维护，支撑日均 10w+ 商家操作</li>
-          <li>使用 Vue.js 重构遗留 jQuery 项目，代码体积减少 45%，可维护性显著提升</li>
+          <li>负责小程序前端页面开发与后端接口对接，实现饮品展示、下单、支付、订单查询等核心流程</li>
+          <li>设计数据库表结构，实现商品管理、订单状态流转、用户地址管理等功能</li>
+          <li>集成微信支付 SDK，完成支付流程调试，保障支付安全与订单状态同步</li>
+          <li>优化小程序加载速度，适配不同机型屏幕，提升用户体验</li>
         </ul>
       </div>
     </div>
@@ -516,95 +501,56 @@ body {
   <div class="section-line"></div>
   <div class="skills-grid">
     <div class="skill-category animate">
-      <h3><span class="icon">⚛️</span> 前端框架</h3>
+      <h3><span class="icon">💻</span> 编程语言</h3>
       <div class="skill-tags">
-        <span class="skill-tag">React</span><span class="skill-tag">Vue.js</span>
-        <span class="skill-tag">Next.js</span><span class="skill-tag">Nuxt</span>
-        <span class="skill-tag">TypeScript</span>
-      </div>
-      <div class="skill-bar-group">
-        <div class="skill-bar-label"><span>React / TypeScript</span><span>95%</span></div>
-        <div class="skill-bar"><div class="skill-bar-fill" style="width:0%" data-width="95%"></div></div>
-        <div class="skill-bar-label"><span>Vue.js 生态</span><span>85%</span></div>
-        <div class="skill-bar"><div class="skill-bar-fill" style="width:0%" data-width="85%"></div></div>
+        <span class="skill-tag">Java</span><span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML/CSS/JavaScript</span>
+        <span class="skill-tag">C/C++</span><span class="skill-tag">SQL</span>
       </div>
     </div>
     <div class="skill-category animate animate-delay-1">
-      <h3><span class="icon">🛠️</span> 工程化 & 工具</h3>
+      <h3><span class="icon">🔧</span> 开发框架</h3>
       <div class="skill-tags">
-        <span class="skill-tag">Webpack</span><span class="skill-tag">Vite</span>
-        <span class="skill-tag">Rollup</span><span class="skill-tag">ESBuild</span>
-        <span class="skill-tag">Monorepo</span><span class="skill-tag">CI/CD</span>
+        <span class="skill-tag">Spring Boot</span><span class="skill-tag">Vue</span>
+        <span class="skill-tag">MyBatis</span>
       </div>
       <div class="skill-bar-group">
-        <div class="skill-bar-label"><span>构建工具链</span><span>90%</span></div>
-        <div class="skill-bar"><div class="skill-bar-fill" style="width:0%" data-width="90%"></div></div>
-        <div class="skill-bar-label"><span>DevOps / CI-CD</span><span>75%</span></div>
+        <div class="skill-bar-label"><span>Spring Boot</span><span>85%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:0%" data-width="85%"></div></div>
+        <div class="skill-bar-label"><span>Vue</span><span>75%</span></div>
         <div class="skill-bar"><div class="skill-bar-fill" style="width:0%" data-width="75%"></div></div>
       </div>
     </div>
     <div class="skill-category animate animate-delay-2">
-      <h3><span class="icon">🎨</span> UI & 设计</h3>
+      <h3><span class="icon">🗄️</span> 数据库技术</h3>
       <div class="skill-tags">
-        <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Figma</span>
-        <span class="skill-tag">动画 & 交互</span><span class="skill-tag">响应式设计</span>
+        <span class="skill-tag">MySQL</span><span class="skill-tag">SQL Server</span>
+        <span class="skill-tag">Redis</span>
       </div>
     </div>
     <div class="skill-category animate animate-delay-3">
-      <h3><span class="icon">☁️</span> 后端 & 云服务</h3>
+      <h3><span class="icon">🛠️</span> 工具软件</h3>
       <div class="skill-tags">
-        <span class="skill-tag">Node.js</span><span class="skill-tag">GraphQL</span>
-        <span class="skill-tag">AWS</span><span class="skill-tag">Docker</span>
-        <span class="skill-tag">MySQL</span><span class="skill-tag">Redis</span>
+        <span class="skill-tag">IDEA</span><span class="skill-tag">PyCharm</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Navicat</span>
+        <span class="skill-tag">Axure</span>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Projects -->
-<section class="section" id="projects">
-  <span class="section-label">项目作品</span>
-  <h2 class="section-title">精选项目</h2>
-  <div class="section-line"></div>
-  <div class="projects-grid">
-    <div class="project-card animate">
-      <div class="project-image">🚀</div>
-      <div class="project-body">
-        <h3>React Flow Engine</h3>
-        <p>开源的可视化工作流编辑器，支持拖拽节点、连线配置，已获 3.2k GitHub Star。</p>
-        <div class="project-tech">
-          <span class="skill-tag">React</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Canvas API</span>
-        </div>
+    <div class="skill-category animate">
+      <h3><span class="icon">📋</span> 专业能力</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">需求分析</span><span class="skill-tag">概要设计</span>
+        <span class="skill-tag">编码实现</span><span class="skill-tag">软件测试</span>
+        <span class="skill-tag">黑盒/白盒测试</span><span class="skill-tag">项目管理</span>
       </div>
     </div>
-    <div class="project-card animate animate-delay-1">
-      <div class="project-image">📊</div>
-      <div class="project-body">
-        <h3>DataViz Dashboard</h3>
-        <p>实时数据可视化大屏方案，支持多种图表类型与自定义主题，用于多个政企项目。</p>
-        <div class="project-tech">
-          <span class="skill-tag">Vue.js</span><span class="skill-tag">ECharts</span><span class="skill-tag">WebSocket</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-card animate animate-delay-2">
-      <div class="project-image">⚡</div>
-      <div class="project-body">
-        <h3>PerfBuddy</h3>
-        <p>前端性能监控 SDK 与平台，自动采集页面性能指标并生成优化建议报告。</p>
-        <div class="project-tech">
-          <span class="skill-tag">JavaScript</span><span class="skill-tag">Performance API</span><span class="skill-tag">Node.js</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-card animate animate-delay-3">
-      <div class="project-image">🧩</div>
-      <div class="project-body">
-        <h3>UI Kit Pro</h3>
-        <p>企业级 React 组件库，包含 60+ 组件，支持主题定制与无障碍访问，NPM 月下载量 15k+。</p>
-        <div class="project-tech">
-          <span class="skill-tag">React</span><span class="skill-tag">Storybook</span><span class="skill-tag">Rollup</span>
-        </div>
+    <div class="skill-category animate animate-delay-1">
+      <h3><span class="icon">🤝</span> 其他技能</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">技术文档撰写</span><span class="skill-tag">问题排查</span>
+        <span class="skill-tag">团队协作</span><span class="skill-tag">敏捷开发</span>
       </div>
     </div>
   </div>
@@ -618,9 +564,13 @@ body {
   <div class="education-card animate">
     <div class="education-icon">🎓</div>
     <div class="education-info">
-      <h3>浙江大学</h3>
-      <p class="degree">计算机科学与技术 · 硕士</p>
-      <p class="date">2014 - 2016</p>
+      <h3>武汉晴川学院</h3>
+      <p class="degree">软件工程专业 · 本科</p>
+      <p class="date">2023.09 - 2027.06</p>
+      <div class="courses">
+        <p class="label">主修课程</p>
+        <p class="list">数据结构与算法、计算机网络、操作系统、数据库原理、软件工程、Java 程序设计、Python 开发、前端开发技术、软件测试</p>
+      </div>
     </div>
   </div>
 </section>
@@ -632,21 +582,21 @@ body {
   <div class="section-line"></div>
   <div class="contact-grid">
     <div class="contact-info animate">
-      <a class="contact-item" href="mailto:zhang.san@example.com">
+      <a class="contact-item" href="mailto:2409269294@qq.com">
         <div class="c-icon">📧</div>
-        <div class="c-text"><strong>邮箱</strong><span>zhang.san@example.com</span></div>
+        <div class="c-text"><strong>邮箱</strong><span>2409269294@qq.com</span></div>
       </a>
-      <a class="contact-item" href="#">
+      <a class="contact-item" href="tel:15271390052">
+        <div class="c-icon">📱</div>
+        <div class="c-text"><strong>电话</strong><span>15271390052</span></div>
+      </a>
+      <a class="contact-item" href="https://github.com/Jie-007">
         <div class="c-icon">🐙</div>
-        <div class="c-text"><strong>GitHub</strong><span>github.com/zhangsan</span></div>
-      </a>
-      <a class="contact-item" href="#">
-        <div class="c-icon">💼</div>
-        <div class="c-text"><strong>LinkedIn</strong><span>linkedin.com/in/zhangsan</span></div>
+        <div class="c-text"><strong>GitHub</strong><span>github.com/Jie-007</span></div>
       </a>
       <div class="contact-item">
-        <div class="c-icon">📍</div>
-        <div class="c-text"><strong>地点</strong><span>中国 · 杭州</span></div>
+        <div class="c-icon">🎓</div>
+        <div class="c-text"><strong>学校</strong><span>武汉晴川学院</span></div>
       </div>
     </div>
     <div class="contact-form animate animate-delay-1">
@@ -669,7 +619,7 @@ body {
 </section>
 
 <footer class="footer">
-  <p>© 2024 张三 · 使用 HTML + CSS + JS 纯手写 ✨</p>
+  <p>© 2024 莫俊杰 · 软件工程专业在读</p>
 </footer>
 
 <script>
@@ -692,11 +642,8 @@ body {
 (function() {
   const toggle = document.getElementById('themeToggle');
   const html = document.documentElement;
-
-  // Load saved theme
   const saved = localStorage.getItem('resume-theme');
   if (saved === 'dark') html.setAttribute('data-theme', 'dark');
-
   toggle.addEventListener('click', function() {
     const current = html.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
@@ -716,8 +663,6 @@ document.getElementById('pdfBtn').addEventListener('click', function() {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-
-        // Animate skill bars
         var bars = entry.target.querySelectorAll('.skill-bar-fill[data-width]');
         bars.forEach(function(bar) {
           bar.style.width = bar.getAttribute('data-width');
